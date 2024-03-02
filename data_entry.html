@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <title>Homepage Data Entry</title>
+        <script>
+            function simpan(){
+                alert('Data berhasil disimpan!')
+            }
+
+            function reset() {
+                document.getElementById("data-entry-form").reset();
+            }
+        </script>
+    </head>
+    <body>
+        <h3>Homepage Data Entry</h3>
+        <table>
+            <!--nama-->
+            <tr>
+                <td width="100">Nama : </td>
+                <td><input type=text name=Nama></td>
+            </tr>
+            <!--nrp-->
+            <tr>
+                <td width="100">NRP : </td>
+                <td><input type=text name=NRP></td>
+            </tr>
+            <!--kelas-->
+            <tr>
+                <td width="100">Kelas : </td>
+                <td><input type=text name=Kelas></td>
+            </tr>
+            <!--jenis kelamin-->
+            <tr>
+                <td width="100">Jenis Kelamin : </td>
+                <td><input type=radio name=JenisKelamin value="laki">Laki - laki</td>
+                <td><input type=radio name=JenisKelamin value="perempuan">Perempuan</td>
+            </tr>
+            <!--agama-->
+            <tr>
+                <td width="100">Agama : </td>
+                <td>
+                    <select>
+                        <option name="agama" value="islam">Islam</option>
+                        <option name="agama" value="kristen">Kristen</option>
+                        <option name="agama" value="hindu">Hindu</option>
+                        <option name="agama" value="budha">Budha</option>
+                        <option name="agama" value="katolik">Katolik</option>
+                        <option name="agama" value="konghuchu">Konghuchu</option>
+                    </select>
+                </td>
+            </tr>
+            <!--TTL-->
+            <tr>
+                <td width="180">Tempat / Tanggal Lahir : </td>
+                <td><input type=text name=TTL></td>
+            </tr>
+            <!--alamat-->
+            </tr>
+            <tr>
+                <td width="100">Alamat : </td>
+                <td><textarea id="msg" name="alamat"></textarea></td>
+            </tr>
+            <!--riwayat pendidikan-->
+            <tr>
+                <td width="150">Riwayat Pendidikan : </td>
+                <td>
+                    <ol type="a">
+                        <li>SD  : <input type=text name=sd></li>
+                        <li>SMP : <input type=text name=smp></li>
+                        <li>SMA : <input type=text name=sma/k></li>
+                    </ol>
+                </td>
+                </tr>
+            <!--email-->
+            <tr>
+                <td width="100">Email :</td>
+                <td><input type=text name=email></td>
+            </tr>
+            <!--Homepage-->
+            <tr>
+                <td width="100">Homepage : </td>
+                <td><input type=text name=homepage></td>
+            </tr>
+            <!--Hobby-->
+            <tr>
+                <td width="100">Hobby : </td>
+                <td><textarea id="msg" name="hobby"></textarea></td>
+            </tr>
+            <!--interest-->
+            <tr>
+                <td width="100">Interest : </td>
+                <td><form action=interest method=get></form>
+                <p><input type="checkbox" name=interest value=komputer>Komputer</p>
+                <p><input type="checkbox" name=interest value=sport>Sport</p>
+                <p><input type="checkbox" name=interest value=Writing>Writing</p>
+                <p><input type="checkbox" name=interest value=travelling>Travelling</p>
+                <p><input type="checkbox" name=interest value=Reading>Reading</p>
+            </td>
+            </tr>
+        </table>
+        <button type="button" onclick="simpan()">Simpan</button>
+        <button type="button" onclick="reset()">Reset</button>
+    </body>
+</html>
